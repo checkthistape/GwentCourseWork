@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>GShop</title> 
+  	<script src="jquery.js"></script>	
+  	<script src="jquery-ui.js"></script>
+	<link rel="icon" href="images/favicon.ico" type="image/x-icon">
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.0/jquery-ui.js"></script> -->
+<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.0/jquery-ui.min.css" /> -->
+  	<link href="jquery-ui/jquery-ui.css" rel="stylesheet" type="text/css" />		
+    <link href="css/my.css" rel="stylesheet" type="text/css">
+    <link href="css/mystyle.css" rel="stylesheet" type="text/css" />  
+  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel="stylesheet" href="css/style.css"> 
+    <link rel="stylesheet" type="text/css" href="css/demo.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="css/elastislide.css" />
+    <link href='http://fonts.googleapis.com/css?family=PT+Sans+Narrow&v1' rel='stylesheet' type='text/css' />
+    <link href='http://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css' />   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />	
+    <script id="img-wrapper-tmpl" type="text/x--tmpl">  
+      <div class="rg-image-wrapper">
+        {{if itemsCount > 1}}
+          <div class="rg-image-nav">
+            <a href="#" class="rg-image-nav-prev">Previous Image</a>
+            <a href="#" class="rg-image-nav-next">Next Image</a>
+          </div>
+        {{/if}}
+        <div class="rg-image"></div>
+        <div class="rg-loading"></div>
+        <div class="rg-caption-wrapper">
+          <div class="rg-caption" style="display:none;">
+            <p></p>
+          </div>
+        </div>
+      </div>
+    </script>
+
+  </head>
+  <body>
+    <div>
+       <div class="header_blk_3" >
+         
+        </div>
+        
+        <DIV class="logo_head">
+        </DIV>
+    </div> 
+
+    <div class="blk">
+      <div id="bound0">
+      <div id="tabs">
+              <ul>
+                <li><a href="#tabs-1">Путь Ведьмака</a></li>
+                <li><a href="#tabs-2">Господин Зеркало</a></li>
+                <li><a href="#tabs-3">Купцы из Офира</a></li>
+                <li><a href="#tabs-4">Железная Воля</a></li>
+                <li><a href="#tabs-5">Новиград</a></li>
+                <li><a href="#tabs-6">Алое Проклятие</a></li>
+              </ul>
+			  
+              <div id="tabs-1" class="forhelmets">
+
+                      <div class="helmet" data-tabs="tabs-1" id="ptvdm" title="4100">
+                        <img src="images/tovar/ptvdm.png" width="180" height="160" alt="доп1" />
+                      </div>
+                      
+               </div> 
+     
+              <div id="tabs-2" class="forhelmets">
+               
+                      <div class="helmet" data-tabs="tabs-2" id="gspzerk" title="0">
+                        <img src="images/tovar/gspzerk.png" width="180" height="160" alt="доп2" />
+                      </div>
+              </div>
+			  
+              <div id="tabs-3" class="forhelmets">
+               
+                      <div class="helmet" data-tabs="tabs-3" id="cpcizof" title="0">
+                        <img src="images/tovar/cpcizof.png" width="180" height="160" alt="доп3" />
+                      </div>
+               
+              </div>
+			  
+              <div id="tabs-4" class="forhelmets">
+             
+                      <div class="helmet" data-tabs="tabs-4" id="zhvl" title="1299">
+                        <img src="images/tovar/zhvl.png" width="180" height="160" alt="доп4" />
+                      </div>
+              </div>      
+              <div id="tabs-5" class="forhelmets">
+              
+                      <div class="helmet" data-tabs="tabs-5" id="nov" title="2799">
+                        <img src="images/tovar/nov.png" width="180" height="160" alt="доп5" />
+                      </div>
+              </div>      
+              <div id="tabs-6" class="forhelmets">
+              
+                      <div class="helmet" data-tabs="tabs-6"id="alprk" title="3399">
+                        <img src="images/tovar/alprk.png" width="180" height="160" alt="доп6" />
+                      </div>
+              </div>
+			  <h3 id="helmetSale">Корзина:</h3>
+				
+              <div id="mycart" class="mycart"></div>
+        
+              <div id="myclear">Товаров в вашей корзине: <span id="helmetsCount"><strong>0</strong></span>   В сумме: <span id="helmetsSumm"><strong>0</strong></span> рублей.             
+              </div>
+        
+              <a href="index.html"><input type="submit" class="cnoop cnoop2" value="Перейти на главную страницу"></a>
+			 
+              <input type="submit" id="opener" class="cnoop cnoop1" value="Заказать">
+			  <div id="dialog" title="Message">
+				<p>Здравствуйте, подождите пожалуйста, скоро вам прийдет SMS</p>
+				</div>
+        </div> </div>
+      
+      <!-- <button ></button> -->
+      
+    </div>
+        <script>
+ 
+	
+	 $( function() {
+    $( "#dialog" ).dialog({
+      autoOpen: false,
+      show: {
+        effect: "drop",
+        duration: 100
+      },
+      hide: {
+        effect: "clip",
+        duration: 600
+      }
+    });
+ 
+    $( "#opener" ).on( "click", function() {
+      $( "#dialog" ).dialog( "open" );
+    });
+  } );
+	
+	
+	
+	
+      $( function() {
+        $( "#tabs" ).tabs({
+          collapsible: true
+        });
+      } );
+     
+      $('div[class^=helmet]').draggable({ 
+          
+          // containment : '[class^=helmet]',
+          // revert : 'invalid',
+          // helper: 'clone',
+          cursor : 'move'
+      });
+
+      //Корзина
+      var helmetsCount = 0;
+      var summa = 0;
+
+    //   $(".helmet").draggable();
+
+    //   $("#mycart").droppable({
+    //   // Wire up a drop function that will be triggered when an element is dropped
+    //   drop: function( event, ui ) {
+    //     // Trigger your event here
+    //     alert("Dropped!");
+    //   }
+    // });
+
+
+      $('#mycart').droppable({
+                  accept: 'div[class^=helmet]',
+                  activeClass: 'highlight',
+                  drop: function(event, ui) {
+                      helmetsCount++;
+                      if (helmetsCount > 0) {$('#myclear').show();}
+                      $('#helmetsCount strong').text(helmetsCount);
+                                 
+              var helmet = $(ui.draggable);
+                      summa += parseInt(helmet.attr('title'));
+                      $('#helmetsSumm strong').text(summa);
+                      helmet.fadeOut(200, function() {
+                      
+                          $(this).appendTo('#mycart').fadeIn(1000).css('top','0').find('img')
+                          .animate({
+                              'width' : '90',
+                              'height' : '80'
+                          },200)
+                          ;
+                      });
+            }
+          });
+
+
+      $('.forhelmets').droppable({
+           accept: '#mycart div[class^=helmet]',
+           activeClass: 'highlight',
+           drop: function(event, ui) {
+                      helmetsCount--;
+                      if (helmetsCount == 0) {$('#myclear').hide();}
+                       $('#helmetsCount strong').text(helmetsCount);
+              var helmet = $(ui.draggable);
+                      summa -= parseInt(helmet.attr('title'));
+                      tid = '#'+helmet.data('tabs');
+                      $('#helmetsSumm strong').text(summa);
+                      helmet.fadeOut(200, function() {
+                          $(this).appendTo(tid).fadeIn(1000).css('position','initial').find('img').animate({
+                              'width' : '180',
+                              'height' : '160'
+                          },2000);
+                      });
+            }
+      });
+
+// табс_2
+       
+    </script>
+  </body>
+</html>

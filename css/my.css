@@ -1,0 +1,47 @@
+﻿
+
+.right {
+	position: absolute;
+	right:0;
+	top:0;
+}
+.right span {
+	margin: 5px;
+}
+#galery_fact{
+	float:left;
+margin-top: 20px;
+margin-right: 20px;
+position:relative;
+border:0px solid blue;
+width:380px;
+height:170px;
+/*margin:0px auto;*/
+}
+#galery_fact #div_for_img{
+position:absolute;
+border:0px solid red;
+width:220px;
+height:125px;
+padding:20px;
+top:0px;
+left:55px;
+}
+#galery_fact #div_for_img img{
+position:absolute;
+top:0px;
+display:none;
+
+}
+#galery_fact #left{
+position:absolute;
+top:50px;
+left:0px;
+cursor:pointer;
+}
+#galery_fact #right{
+position:absolute;
+top:50px;
+right:0px;
+cursor:pointer;
+}

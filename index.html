@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>GWENT</title> 
+	<script src="jquery.js"></script>
+	<!-- <script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>	 -->
+	<script src="jquery-ui.js"></script>
+	<link href="jquery-ui/jquery-ui.css" rel="stylesheet" type="text/css" />	
+	<!-- <script type="text/javascript" src="jquery-ui/functions.js"></script> -->
+	<link rel="icon" href="images/favicon.ico" type="image/x-icon">
+
+	
+    <link href="css/my.css" rel="stylesheet" type="text/css"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel="stylesheet" href="css/style.css"> 
+    <link rel="stylesheet" type="text/css" href="css/demo.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="css/elastislide.css" />
+    <link href='http://fonts.googleapis.com/css?family=PT+Sans+Narrow&v1' rel='stylesheet' type='text/css' />
+    <link href='http://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css' />   
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />	
+
+    <script id="img-wrapper-tmpl" type="text/x--tmpl">  
+      <div class="rg-image-wrapper">
+        {{if itemsCount > 1}}
+          <div class="rg-image-nav">
+            <a href="#" class="rg-image-nav-prev">Previous Image</a>
+            <a href="#" class="rg-image-nav-next">Next Image</a>
+          </div>
+        {{/if}}
+        <div class="rg-image"></div>
+        <div class="rg-loading"></div>
+        <div class="rg-caption-wrapper">
+          <div class="rg-caption" style="display:none;">
+            <p></p>
+          </div>
+        </div>
+      </div>
+    </script>
+    <script>
+		$( function() {
+			$( "#tabs" ).tabs();
+			} );
+		</script>
+	</head>
+
+
+  <body>
+    <div>
+       
+		  
+		 
+
+        <!-- header -->
+        <DIV class="logo_head">
+        </DIV>
+
+        
+        <div  id="dh" class="blk">
+         <h2 id="What" class="zagolovok">GWENT что это?</h2>
+         <div>
+           <div id="gallery">
+            <div id="big"><img id="img_for" src="images/gal/start.jpg" align="center" alt="Старт" /></div>
+            <div id="small">
+              <a href="images/gal/1.jpg"><img src="images/gal/1_mini.jpg" alt="m1" /></a>
+              <a href="images/gal/2.jpg"><img src="images/gal/2_mini.jpg" alt="m2" /></a>
+              <a href="images/gal/3.jpg"><img src="images/gal/3_mini.jpg" alt="m3" /></a>
+            </div>
+          </div>
+
+           <p class="font"> GWENT The Witcher Card Game - бесплатная коллекционная карточная игра для Microsoft Windows, iOS и Android, разработанная и изданная компанией CD Projekt RED и выпущенная в 2018 году. «Гвинт» является развитием мини-игры из ролевой компьютерной игры «Ведьмак 3: Дикая Охота».
+           </p>
+           <p class="font">  Впервые игра «Гвинт» (польск. Gwint) была упомянута в пятой книге цикла «Ведьмак» Анджея Сапковского, «Крещение огнём», в одной сцене которой главный герой, Геральт из Ривии, наблюдал за игрой краснолюдов. В книге не объяснялись правила игры, оставляя их на воображение читателям. 
+           </p>                      
+           <p class="font"> В мае 2015 года студия CD Projekt RED выпустила компьютерную игру «Ведьмак 3: Дикая Охота», в которую «Гвинт» был включён в качестве коллекционной карточной мини-игры. Игрок получал карты за выполнение заданий внутри игры, выигрывал их в карточных поединках или же покупал их у торговцев, после чего собирал из них колоды для игры.
+		   В «Гвинте» игроки по очереди выкладывали карты на стол, разделённый на три ряда (рукопашный, стрелковый и дальнобойный). Каждая карта имела номинал — количество очков, которое она приносила игроку. Когда оба игрока не могли или не хотели сделать очередной ход, раунд заканчивался, и игрок, набравший большее число очков, выигрывал в раунде. Для победы в матче необходимо было выиграть 2 из 3 раундов.
+           </p>
+         </div>  
+		 <br>
+		 <br>
+		 <br>
+		 
+		 <div id="tabs">
+					<ul>
+					<li><a href="#tabs-1">Господин Зеркало</a></li>
+					<li><a href="#tabs-2">Купцы из Офира</a></li>
+					<li><a href="#tabs-3">Железная Воля</a></li>
+					<li><a href="#tabs-4">Новиград</a></li>
+					<li><a href="#tabs-5">Алое Проклятие</a></li>
+					
+				  </ul>
+				  <div id="tabs-1">
+						<p><strong>Дополнение Карт Гвинт "Господин Зеркало"</strong></p>
+	          <p id="zamena" class="font">
+
+В каждой фракции появятся именитые воины и легендарное оружие, а помимо них — 11 нейтральных карт. Испытайте в деле новые приёмы и комбинации, чтобы не оставить противнику шансов!
+<br>
+<br>
+<div class="cardimages" align="center">
+<img class="cards" src="images/Cards/Card1.jpg" alt="c1" width="136" height="195" hspace="10" title="Господин Зеркало
+
+Покров.
+Размещение: обратите крайнюю левую карту в вашей руке в случайную легендарную карту вашей фракции, которой нет в вашей стартовой колоде.
+Активируйте эту способность каждый раз, когда играете крайнюю правую карту из вашей руки.
+
+Иные предпочитают оставаться в тени и оттуда направлять важнейшие события в истории. На самом деле он такой один" />
+<img class="cards" src="images/Cards/Card2.jpg" alt="c2" width="136" height="195" hspace="10" title="Марлена де Трастамара
+
+Покров.
+Приказ: добавьте покров отряду.
+
+Не сядет никто с тобой за стол. Нет ложки, которая тебя накормит. Никогда больше не захочешь ты взглянуть на себя в зеркало." />
+<img class="cards" src="images/Cards/Card3.jpg" alt="c3" width="136" height="195" hspace="10" title="Тиргви Тиршах
+
+Ветеран.
+Размещение: добавьте брешь вражескому отряду.
+
+Если встанешь на сторону победителей, это уже не предательство." />
+<img class="cards" src="images/Cards/Card4.jpg" alt="c4" width="136" height="195" hspace="10" title="Онейромантия
+
+Эхо.
+Сыграйте любую карту из вашей колоды.
+
+Магическое искусство чтения прошлого и будущего по сновидениям — непростая задача даже для опытной чародейки." />
+<img class="cards" src="images/Cards/Card5.jpg" alt="c5" width="136" height="195" hspace="10" title="Дубовики
+
+Размещение (рукопашный ряд): добавьте кровотечение вражескому отряду на 3 х.
+Размещение (дальнобойный ряд): создайте изначальную копию этой карты в этом ряду.
+Преданность: активируйте обе способности.
+
+Больше всего им нравится жевать пальцы — они для них как сочная морковь." />
+</div>
+	          </p>
+	          
+			  
+					  </div>
+					  
+				  <div id="tabs-2">					
+					<p><strong>Дополнение Карт Гвинт "Купцы из Офира"</strong></p>
+					<br>
+					Вас ждут новые тактики на поле боя, элитные воины из всех шести фракций и 11 нейтральных карт.
+<p>
+<div class="cardimages" align="center">
+<img class="cards" src="images/Cards/Card6.jpg" alt="c1" width="136" height="195" hspace="10" title="Винсент Ван Мурлегем
+
+Размещение: уничтожьте вражеский отряд, у которого есть статус.
+
+Ван Мурлегемов стараются избегать даже сборщики податей." />
+<img class="cards" src="images/Cards/Card7.jpg" alt="c2" width="136" height="195" hspace="10" title="Саэр Ку'ан
+
+После 2 ваших ходов усильте эту карту на 10 ед. в конце хода.
+
+Тигры — опасные звери, особенно когда распробуют человеческую плоть…" />
+<img class="cards" src="images/Cards/Card8.jpg" alt="c3" width="136" height="195" hspace="10" title="Боевая повозка
+
+Размещение (рукопашный ряд): добавьте кровотечение вражескому отряду на 4 х.
+Размещение (дальнобойный ряд): переместите вражеский отряд в другой ряд на его стороне.
+Подкрепление: активируйте сразу обе способности.
+
+Повозка влетела прямиком в толпу, повалив врагов на землю, как коса пшеницу…" />
+<img class="cards" src="images/Cards/Card9.jpg" alt="c4" width="136" height="195" hspace="10" title="Вороний клан: проповедник
+
+Усиливайте этот отряд на 1 ед. каждый раз, когда играете карту алхимии.
+Взаимосвязь: вместо этого усиливайте этот отряд на 2 ед.
+
+Тебе еще долго предстоит учиться. И ошибаться." />
+<img class="cards" src="images/Cards/Card10.jpg" alt="c5" width="136" height="195" hspace="10" title="Полуденница
+
+Завещание: создайте 2 Крыс в случайном ряду противника.
+
+Вопреки популярному мнению, крестьяне делают рабочий перерыв в середине дня, чтобы спрятаться не от жары, а от полуденниц." />
+</div>
+</p>
+					
+				  </div>
+				  
+				  <div id="tabs-3">					
+					<p><strong>Дополнение Карт Гвинт "Железная Воля"</strong></p>
+					<br>
+					Вас ждут новые тактики на поле боя, элитные воины из шести фракций и 21 нейтральная карта.
+<p>
+<div class="cardimages" align="center">
+<img class="cards" src="images/Cards/Card11.jpg" alt="c1" width="136" height="195" hspace="10" title="Железные соколы: пехота
+
+Баррикада: в конце каждого вашего хода усиливайте эту карту на 1 ед.
+
+Щеголять одежкою можно и в бою." />
+<img class="cards" src="images/Cards/Card12.jpg" alt="c2" width="136" height="195" hspace="10" title="Естественный отбор
+
+Нанесите 4 ед. урона вражескому отряду, затем создайте по Трутню в случайном дружественном ряду за каждую единицу урона, потраченную впустую.
+
+Выживает сильнейший. И это не про тебя." />
+<img class="cards" src="images/Cards/Card13.jpg" alt="c3" width="136" height="195" hspace="10" title="Подготовка к бою
+
+Усильте дружественный отряд на 4 ед. и добавьте ему 2 ед. брони.
+Если это солдат, тогда усильте его на 6 ед. и добавьте 2 ед. брони.
+
+Не один рыцарь пал на поле брани из-за того, что плохо затянул нагрудник." />
+<img class="cards" src="images/Cards/Card14.jpg" alt="c4" width="136" height="195" hspace="10" title="Краснолюдская колесница
+
+Размещение: создайте Краснолюда-громилу в этом ряду.
+Взаимосвязь: вместо этого создайте 2 Краснолюдов-громил в этом ряду.
+
+Бумагу-то можете марать как угодно, уважаемые краснолюды. Но построить вам это не удастся, попомните мои слова." />
+<img class="cards" src="images/Cards/Card15.jpg" alt="c5" width="136" height="195" hspace="10" title="Реданский рыцарь
+
+Баррикада (дальнобойный ряд): в конце каждого вашего хода усиливайте этот отряд на 1 ед.
+Уязвимость: переместите этот отряд в рукопашный ряд, затем нанесите 2 ед. урона сильнейшему вражескому отряду.
+
+Во славу Редании!" />
+</div>
+</p>
+				</div>	
+				
+				<div id="tabs-4">					
+					<p><strong>Дополнение Карт Гвинт "Новиград"</strong></p>
+					<br>
+					В ГВИНТЕ ПОЯВИТСЯ НОВАЯ ФРАКЦИЯ 
+					<br>
+					<br>
+
+Вступайте в Синдикат — новую фракцию негодяев, разбойников и головорезов. Для них золото всегда оправдывает средства!
+<p>
+<div class="cardimages" align="center">
+<img class="cards" src="images/Cards/Card16.jpg" alt="c1" width="136" height="195" hspace="10" title="Морельзе
+
+Размещение: нанесите 4 ед. урона вражескому отряду.
+Дань 6: вместо этого уничтожьте  вражеский отряд.
+
+Некоторые охотники на ведьм и правда верили, что изменяют мир к лучшему.
+Морельзе к их числу не принадлежал" />
+<img class="cards" src="images/Cards/Card17.jpg" alt="c2" width="136" height="195" hspace="10" title="Охотник: палач
+
+Выгода 2.
+Платеж 1: добавьте кровотечение вражескому отряду на 1х. Если у
+ него есть награда за голову, тогда нанесите ему 1 ед. урона
+ 
+ Не хотелось бы вашу шевелюру попортить, госпожа
+" />
+<img class="cards" src="images/Cards/Card18.jpg" alt="c3" width="136" height="195" hspace="10" title="Карманная кража
+
+Выгода 7.
+
+Ох, извиняюсь... Ну я и растяпа!" />
+<img class="cards" src="images/Cards/Card19.jpg" alt="c4" width="136" height="195" hspace="10" title="Златорубы: Громила
+
+Устрашение.
+Размещение: нанесите 2 ед. урона вражескому отряду.
+
+Хоть на тебе кираса из махакамской стали, хоть кружевная ночнушка — ему все равно." />
+<img class="cards" src="images/Cards/Card20.jpg" alt="c5" width="136" height="195" hspace="10" title="Кровавая Забава
+
+Выгода 4.
+Потратьте все ваши монеты и нанесите столько же единиц урона вражескому отряду
+
+Почему я это сделал? Да потому что мне было скучно!" />
+</div>
+</p>
+				</div>
+				
+				<div id="tabs-5">					
+				<p><strong>Дополнение Карт Гвинт "Алое Проклятие"</strong></p>
+					<br>
+					В первом дополнении для ГВИНТА более 100 новых карт: 31 нейтральная карта и по 14 карт каждой фракции.
+
+<p>
+<div class="cardimages" align="center">
+<img class="cards" src="images/Cards/Card21.jpg" alt="c1" width="136" height="195" hspace="10" title="Дева Озера
+
+Щит.
+Приказ: добавьте щит дружественному отряду.
+
+Прими этот меч в знак моего расположения. Сотни лет он лежал в глубинах, ожидая именно тебя." />
+<img class="cards" src="images/Cards/Card22.jpg" alt="c2" width="136" height="195" hspace="10" title="Орианна
+
+Размещение: добавьте вражескому отряду кровотечение на число ходов, равное количеству дружественных вампиров.
+Дальнобойный ряд: в конце каждого вашего хода усиливайте эту карту на значение, равное количеству вражеских отрядов с кровотечением.
+
+Госпожа Орианна к нам очень добра: поддерживает художников и артистов, помогает бедным. Даже приют для сирот основала!" />
+<img class="cards" src="images/Cards/Card23.jpg" alt="c3" width="136" height="195" hspace="10" title="Сианна
+
+Приказ: повторно активируйте способность Размещение отряда, который сыграете следующим в этом ходу.
+
+Ваше княжеское величество! Княжна поражена проклятием Черного Солнца. Опасаюсь, что для нее надежды нет." />
+<img class="cards" src="images/Cards/Card24.jpg" alt="c4" width="136" height="195" hspace="10" title="Арториус Виго
+
+Ассимиляция.
+Размещение: сотворите и сыграйте копию бронзового отряда из вашей стартовой колоды, сделав силу этой копии равной 1 ед.
+
+Говорят, он создавал такие убедительные иллюзии, что сам начинал в них верить..." />
+<img class="cards" src="images/Cards/Card25.jpg" alt="c5" width="136" height="195" hspace="10" title="Детлафф: высший вампир
+
+Завещание: призовите этот отряд из сброса в тот же ряд.
+Можно применить не более 3 раз. При уходе карты с поля способность не восстанавливается.
+
+При виде него даже у ведьмаков трясутся колени." />
+</div>
+</p>
+				</div>
+				
+				
+			</div>
+			
+             <!-- kind of factions -->
+			 
+         <h2 id="kind" class="zagolovok">Фракции</h2> 
+          
+          	<div id='galery_fact'>
+			
+          	  <img id="left" src="images/left.png" alt="foto_left" />
+			  
+          	    <div id="div_for_img">
+				
+          	      <img id="img_1" src="images/fractions/fr1.png" width="220" height="125" alt="Фракция 1" title="Нильфгаард - одно из самых больших и могущественных государств в истории мира, находящееся в южной части континента. Может похвастаться процветающей экономикой и мощной, хорошо подготовленной армией с талантливыми командирами"/> 
+          	
+          	      <img id="img_2" src="images/fractions/fr2.png" width="220" height="125" alt="Фракция 2" title="Северные королевства, или Королевства Севера (ориг. Nordlingowie) — термин, описывающий группу человеческих государств, расположенных к северу от гор Амелл и реки Яруги. "/> 
+          	
+          	      <img id="img_3" src="images/fractions/fr3.png" width="220" height="125" alt="Фракция 3" title="Скоя’таэли, или Белки (ориг. Scoia'tael, со Старшей Речи — бе́лки) — партизанское движение нелюдей, сформировавшееся после окончания Первой Северной войны. Люди считают их террористами. Своё название получили за обыкновение носить на шапках беличьи хвосты. "/> 
+          	
+          	      <img id="img_4" src="images/fractions/fr4.png" width="220" height="125" alt="Фракция 4" title="Чудовища (Обитающие в мире и иных мирах создания, которые не обладают разумом и/или подчиняются в большей степени инстинктам, агрессивны к представителям иных видов или даже своего. Кроме того, в эту категорию входят все противники из игровой серии, не являющиеся людьми или нелюдьми. "/>
+
+                  <img id="img_5" src="images/fractions/fr5.png" width="220" height="125" alt="Фракция 5" title="Синдикат (ориг. Syndicate) — преступная организация из игры Гвинт: Ведьмак. Карточная игра. "/> 
+				  
+				  <img id="img_6" src="images/fractions/fr6.png" width="220" height="125" alt="Фракция 6" title="Скеллиге, или Острова Скеллиге (ориг. Skellige) — государство, расположенное на одноимённом архипелаге. Эти места окутывают древние легенды. Обитатели Скеллиге известны как грозные пираты и располагают сильным флотом — возможно, наилучшим среди всех Северных королевств.  "/> 
+          	    </div>
+				
+          	  <img id="right" src="images/right.png" alt="foto_right" />
+          		            <script>	
+          		            $(function(){
+          	
+          		            var n_min=1;
+          		            var n_max=6;
+          		            var n_active=n_min;
+          		            var n_old=n_min;
+          		            var time_change=1000;
+          		            var id_foto_active="#img_"+n_active; 
+          		            var id_foto_old="#img_"+n_old;
+          	
+          	
+          		            function viewfoto(){
+          		              $(id_foto_old).fadeOut(time_change);
+          		              $(id_foto_active).fadeIn(time_change);
+          		              $('.wrap_text').html($(id_foto_active).data('doc'))
+          		            }
+          		              $("#left,#right").hover(function(){
+          		                $(this).animate({"width":"40px","height":"78px","top":"40px"},200)
+          		              },function(){
+          		                $(this).animate({"width":"30px","height":"60px","top":"50px"},1000)
+          		              });
+          	
+          		            function left_hover(){
+          		              n_old=n_active
+          		              n_active++
+          		              if(n_active>n_max){
+          		                n_active=n_min
+          		              }
+          		              id_foto_old="#img_"+n_old
+          		              id_foto_active="#img_"+n_active
+          		            }
+          		            function right_hover(){
+          		              n_old=n_active
+          		              n_active--
+          		              if(n_active<n_min){
+          		                n_active=n_max
+          		              }
+          		              id_foto_old="#img_"+n_old
+          		              id_foto_active="#img_"+n_active
+          		            }
+          		            $("#left").click(function(){
+          		                left_hover()
+          		                viewfoto()
+          		              })
+          		            $("#right").click(function(){
+          		                right_hover()
+          		                viewfoto()
+          		              })
+          	
+          		              right_hover()
+          		              viewfoto()
+          		            });			
+          		            </script>           
+          	</div>
+
+
+            <div style="clear:both" ></div>
+						<div class="font">
+						<p class="font">
+В "Гвинте" существуют шесть фракций:<br>
+- Скеллиге (специализируются на ранениях, работе с кладбищем);<br>
+- Синдикат (специализируются на преступлениях, имеет уникальный ресурс - монеты);<br>
+- Чудовища (специализируются на пожирании, завещаниях, кровотечениях, симбиозе; дают, как правило, много очков за ограниченное количество ходов);<br>
+- Скоя'таэли (специализируются на гармонии, передвижениях из ряда в ряд, засадах (ловушках) и "Дубах" (шутка);<br>
+- Королевства Севера (специализируются на приказах, зарядах, усилениях и пр. медленно запрягают, но быстро разгоняются или в контроль стола оппонента, или в силу);<br>
+- Нильфгаард (специализируются на блоках, шпионах, ядахпофикситеуже, любит поковыряться в чужой колоде);<br>
+<br>
+Также существуют нейтральные карты, их можно добавить в любую колоду.</p>
+						</div>
+
+
+			<div style="clear:both"></div>
+			<h2 class="zagolovok">Галерея</h2>
+      
+		
+    
+      
+        <!-- gallery -->
+          <div class="container">
+
+                <div class="content">        
+                  <div id="rg-gallery" class="rg-gallery">
+                    <div class="rg-thumbs">
+                      <!-- Elastislide Carousel Thumbnail Viewer -->
+                      <div class="es-carousel-wrapper">                
+                        <div class="es-carousel">
+                          <ul>
+                            <li><a href="#"><img class="l_rozm" src="images/1.jpg" data-large="images/1.jpg" alt="image01" /></a></li>
+                            <li><a href="#"><img src="images/2.jpg" data-large="images/2.jpg" alt="image02"/></a></li>
+                            <li><a href="#"><img src="images/3.jpg" data-large="images/3.jpg" alt="image03"/></a></li>
+                            <li><a href="#"><img src="images/4.jpg" data-large="images/4.jpg" alt="image04"/></a></li>
+                            <li><a href="#"><img src="images/5.jpg" data-large="images/5.jpg" alt="image05"/></a></li>
+                            <li><a href="#"><img src="images/6.jpg" data-large="images/6.jpg" alt="image06"/></a></li>
+                            <li><a href="#"><img src="images/7.jpg" data-large="images/7.jpg" alt="image07"/></a></li>
+                            <li><a href="#"><img src="images/8.jpg" data-large="images/8.jpg" alt="image08"/></a></li>
+                            <li><a href="#"><img src="images/9.jpg" data-large="images/9.jpg" alt="image09"/></a></li>
+                            <li><a href="#"><img src="images/10.jpg" data-large="images/10.jpg" alt="image10"/></a></li>
+                            <li><a href="#"><img src="images/11.jpg" data-large="images/11.jpg" alt="image11"/></a></li>
+                            <li><a href="#"><img src="images/12.jpg" data-large="images/12.jpg" alt="image12"/></a></li>
+                            <li><a href="#"><img src="images/13.jpg" data-large="images/13.jpg" alt="image13"/></a></li>
+                            <li><a href="#"><img src="images/14.jpg" data-large="images/14.jpg" alt="image14"/></a></li>
+                            <li><a href="#"><img src="images/15.jpg" data-large="images/15.jpg" alt="image15"/></a></li>
+                            <li><a href="#"><img src="images/16.jpg" data-large="images/16.jpg" alt="image16"/></a></li>
+                            <li><a href="#"><img src="images/17.jpg" data-large="images/17.jpg" alt="image17"/></a></li>
+                            <li><a href="#"><img src="images/18.jpg" data-large="images/18.jpg" alt="image18"/></a></li>
+                            <li><a href="#"><img src="images/19.jpg" data-large="images/19.jpg" alt="image19"/></a></li>
+                            <li><a href="#"><img src="images/20.jpg" data-large="images/20.jpg" alt="image20"/></a></li>
+                            <li><a href="#"><img src="images/21.jpg" data-large="images/21.jpg" alt="image21"/></a></li>
+                            <li><a href="#"><img src="images/22.jpg" data-large="images/22.jpg" alt="image22"/></a></li>
+                            <li><a href="#"><img src="images/23.jpg" data-large="images/23.jpg" alt="image23"/></a></li>
+                            <li><a href="#"><img src="images/24.jpg" data-large="images/24.jpg" alt="image24"/></a></li>
+                          </ul>
+                        </div>
+                      </div>
+                      <!-- End Elastislide Carousel Thumbnail Viewer -->
+                    </div><!-- rg-thumbs -->
+                  </div><!-- rg-gallery -->        
+                </div><!-- content -->
+              </div><!-- container -->                           
+         <!-- finish gallery -->
+		
+		<a id="BuyDop"  href="kupit_copy.html"><h2 class="zagolovok">Приобрести дополнения</h2></a>
+		
+        <!-- run line -->
+        <!-- for run line -->
+        
+                  <div class="owl-carousel owl-theme">
+                    <div ><a href="kupit_copy.html"><img class="img_s" src="images/tovar/bsk.png" align="center" alt="Картинка1"></a></div>
+                  </div>
+
+  </div>    
+        </div>
+              
+
+<script type="text/javascript" src="js/gallery.js"></script>     
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+<script type="text/javascript" src="js/jquery.tmpl.min.js"></script>
+<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+<script type="text/javascript" src="js/jquery.elastislide.js"></script>
+
+
+<script>  
+
+$(document).ready(function(){
+  $(".owl-carousel").owlCarousel({ 
+     loop:true,
+    margin:10,
+    responsiveClass:true,
+    responsive:{
+        0:{
+            items:1,
+            nav:true
+        },
+        600:{
+            items:3,
+            nav:false
+        },
+        1000:{
+            items:5,
+            nav:true,
+            loop:false
+        }
+    }
+  });
+});
+</script>
+
+  </body>
+
+</html>
